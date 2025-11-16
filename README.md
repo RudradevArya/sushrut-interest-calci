@@ -1,1 +1,98 @@
 # sushrut-interest-calci
+
+## to run
+`node j.js`
+
+## if too lazy, heres the  output
+> when 1L/month sal, 20L princi, 9% int
+
+```PS C:\Users\Rudradev Arya\Desktop\Sushrut-Interest-Calci> node .\j.js
+================================================================================
+LOAN COMPARISON ANALYSIS
+Principal: ₹20,00,000
+Interest Rate: 9% per annum
+Your Monthly Payment: ₹1,00,000
+================================================================================
+
+C:\Users\Rudradev Arya\Desktop\Sushrut-Interest-Calci\j.js:15
+        const actualPayment = Math.min(monthlyPayment, balance + interestPayment);
+                                                       ^
+
+ReferenceError: balance is not defined
+    at calci (C:\Users\Rudradev Arya\Desktop\Sushrut-Interest-Calci\j.js:15:56)
+    at Object.<anonymous> (C:\Users\Rudradev Arya\Desktop\Sushrut-Interest-Calci\j.js:57:16)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47
+
+Node.js v20.9.0
+PS C:\Users\Rudradev Arya\Desktop\Sushrut-Interest-Calci> node .\j.js
+================================================================================
+LOAN COMPARISON ANALYSIS
+Principal: ₹20,00,000
+Interest Rate: 9% per annum
+Your Monthly Payment: ₹1,00,000
+================================================================================
+
+RESULTS WITH ₹1,00,000/MONTH PAYMENT:
+  Time to Pay Off: 22 months (1.83 years)
+  Total Amount Paid: ₹21,75,105
+  Total Interest Paid: ₹1,75,105
+  Interest Saved vs 10-year plan: ₹8,65,114
+  Interest Saved vs 5-year plan: ₹3,15,898
+
+================================================================================
+DETAILED AMORTIZATION SCHEDULE (First 6 months)
+================================================================================
+Month     Payment           Principal         Interest          Balance
+--------------------------------------------------------------------------------
+1         ₹1,00,000         ₹85,000           ₹15,000           ₹19,15,000
+2         ₹1,00,000         ₹85,638           ₹14,363           ₹18,29,363
+3         ₹1,00,000         ₹86,280           ₹13,720           ₹17,43,083
+4         ₹1,00,000         ₹86,927           ₹13,073           ₹16,56,156
+5         ₹1,00,000         ₹87,579           ₹12,421           ₹15,68,577
+6         ₹1,00,000         ₹88,236           ₹11,764           ₹14,80,341
+7         ₹1,00,000         ₹88,897           ₹11,103           ₹13,91,444
+8         ₹1,00,000         ₹89,564           ₹10,436           ₹13,01,880
+9         ₹1,00,000         ₹90,236           ₹9,764            ₹12,11,644
+10        ₹1,00,000         ₹90,913           ₹9,087            ₹11,20,731
+11        ₹1,00,000         ₹91,595           ₹8,405            ₹10,29,137
+12        ₹1,00,000         ₹92,281           ₹7,719            ₹9,36,855
+13        ₹1,00,000         ₹92,974           ₹7,026            ₹8,43,882
+14        ₹1,00,000         ₹93,671           ₹6,329            ₹7,50,211
+15        ₹1,00,000         ₹94,373           ₹5,627            ₹6,55,837
+16        ₹1,00,000         ₹95,081           ₹4,919            ₹5,60,756
+17        ₹1,00,000         ₹95,794           ₹4,206            ₹4,64,962
+18        ₹1,00,000         ₹96,513           ₹3,487            ₹3,68,449
+19        ₹1,00,000         ₹97,237           ₹2,763            ₹2,71,212
+20        ₹1,00,000         ₹97,966           ₹2,034            ₹1,73,246
+21        ₹1,00,000         ₹98,701           ₹1,299            ₹74,546
+22        ₹75,105           ₹74,546           ₹559              ₹0
+...
+
+Last 3 months:
+--------------------------------------------------------------------------------
+20        ₹1,00,000         ₹97,966           ₹2,034            ₹1,73,246
+21        ₹1,00,000         ₹98,701           ₹1,299            ₹74,546
+22        ₹75,105           ₹74,546           ₹559              ₹0
+
+================================================================================
+FINAL COMPARISON SUMMARY
+================================================================================
+
+Scenario                      Tenure         Total Paid          Total Interest
+--------------------------------------------------------------------------------
+10-Year Plan (EMI)            120 months     ₹30,40,219          ₹10,40,219
+5-Year Plan (EMI)             60 months      ₹24,91,003          ₹4,91,003
+Your Plan (₹1L/month)         22 months      ₹21,75,105          ₹1,75,105
+================================================================================
+
+WINNER: Your plan with ₹1,00,000/month payment!
+   - Pays off in just 22 months (1.83 years)
+   - Saves ₹8,65,114 compared to 10-year plan
+   - Saves ₹3,15,898 compared to 5-year plan
+PS C:\Users\Rudradev Arya\Desktop\Sushrut-Interest-Calci>
+```
