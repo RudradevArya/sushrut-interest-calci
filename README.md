@@ -6,29 +6,7 @@
 ## if too lazy, heres the  output
 > when 1L/month sal, 20L princi, 9% int
 
-```PS C:\Users\Rudradev Arya\Desktop\Sushrut-Interest-Calci> node .\j.js
-================================================================================
-LOAN COMPARISON ANALYSIS
-Principal: ₹20,00,000
-Interest Rate: 9% per annum
-Your Monthly Payment: ₹1,00,000
-================================================================================
-
-C:\Users\Rudradev Arya\Desktop\Sushrut-Interest-Calci\j.js:15
-        const actualPayment = Math.min(monthlyPayment, balance + interestPayment);
-                                                       ^
-
-ReferenceError: balance is not defined
-    at calci (C:\Users\Rudradev Arya\Desktop\Sushrut-Interest-Calci\j.js:15:56)
-    at Object.<anonymous> (C:\Users\Rudradev Arya\Desktop\Sushrut-Interest-Calci\j.js:57:16)
-    at Module._compile (node:internal/modules/cjs/loader:1241:14)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
-    at Module.load (node:internal/modules/cjs/loader:1091:32)
-    at Module._load (node:internal/modules/cjs/loader:938:12)
-    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
-    at node:internal/main/run_main_module:23:47
-
-Node.js v20.9.0
+```
 PS C:\Users\Rudradev Arya\Desktop\Sushrut-Interest-Calci> node .\j.js
 ================================================================================
 LOAN COMPARISON ANALYSIS
@@ -68,13 +46,6 @@ Month     Payment           Principal         Interest          Balance
 17        ₹1,00,000         ₹95,794           ₹4,206            ₹4,64,962
 18        ₹1,00,000         ₹96,513           ₹3,487            ₹3,68,449
 19        ₹1,00,000         ₹97,237           ₹2,763            ₹2,71,212
-20        ₹1,00,000         ₹97,966           ₹2,034            ₹1,73,246
-21        ₹1,00,000         ₹98,701           ₹1,299            ₹74,546
-22        ₹75,105           ₹74,546           ₹559              ₹0
-...
-
-Last 3 months:
---------------------------------------------------------------------------------
 20        ₹1,00,000         ₹97,966           ₹2,034            ₹1,73,246
 21        ₹1,00,000         ₹98,701           ₹1,299            ₹74,546
 22        ₹75,105           ₹74,546           ₹559              ₹0
